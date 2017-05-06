@@ -24,18 +24,29 @@ class KDObjectExtTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        class Student: NSObject {
+        
+        class CustomObject: NSObject {
             
         }
         
-        let student = Student()
-        student.extValues = ["key": "keyValue"]
+        let object = CustomObject()
+        object.extValues = ["age": 10, "name": "kd"]
         
-        print("======================")
-        print("\(student.extValues)")
-
-        let value = student.extValue<String>(for: "key")
-        print("value ===== \(value)")
+        XCTAssertEqual(object.extValues.description, "[\"age\": 10, \"name\": kd]")
+        
+        let age = object.extValue(for: "age", valueType: Int.self)
+        XCTAssertEqual(age, 10)
+        
+        let newAgeWithIgnoreExist = object.setExtValue(for: "age", with: 20)
+        XCTAssertEqual(newAgeWithIgnoreExist, true)
+        var newAge = object.extValue(for: "age", valueType: Int.self)
+        XCTAssertEqual(newAge, 20)
+        
+        let newAgeWithOutIgnoreExist = object.setExtValue(for: "age", with: 30, ignoreExist: false)
+        XCTAssertEqual(newAgeWithOutIgnoreExist, false)
+        newAge = object.extValue(for: "age", valueType: Int.self)
+        XCTAssertEqual(newAge, 20)
+        
     }
     
     func testPerformanceExample() {

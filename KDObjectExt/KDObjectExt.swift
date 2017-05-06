@@ -36,8 +36,22 @@ public extension NSObject {
         }
     }
     
-    func extValue<T>(`for` key: String) -> T? {
+    func extValue<T>(`for` key: String, valueType: T.Type) -> T? {
         return extValues[key] as? T
+    }
+    
+    @discardableResult
+    func setExtValue(`for` key: String, with value: Any, ignoreExist: Bool = true) -> Bool {
+        var _extValues = extValues
+        
+        if !ignoreExist, let _ = _extValues[key] {
+            return false
+        }
+        
+        _extValues[key] = value
+        extValues = _extValues
+        
+        return true
     }
     
 }

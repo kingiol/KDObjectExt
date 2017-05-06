@@ -1,2 +1,2 @@
 # KDObjectExt
-[![Build Status](https://travis-ci.org/RxSwiftCommunity/NSObject-Rx.svg)](https://travis-ci.org/kingiol/KDObjectExt)
+[![Build Status](https://travis-ci.org/kingiol/KDObjectExt.svg)](https://travis-ci.org/kingiol/KDObjectExt)
