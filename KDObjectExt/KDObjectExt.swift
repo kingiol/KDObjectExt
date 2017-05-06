@@ -18,7 +18,7 @@ public extension NSObject {
         closure()
     }
     
-    var extValue: [String: Any] {
+    var extValues: [String: Any] {
         get {
             var returnV = [String: Any]()
             lock {
@@ -34,6 +34,10 @@ public extension NSObject {
                 objc_setAssociatedObject(self, &NSObject.ExtAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             }
         }
+    }
+    
+    func extValue<T>(`for` key: String) -> T? {
+        return extValues[key] as? T
     }
     
 }

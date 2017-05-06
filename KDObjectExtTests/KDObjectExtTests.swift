@@ -29,12 +29,13 @@ class KDObjectExtTests: XCTestCase {
         }
         
         let student = Student()
-        student.extValue = ["key": "keyValue"]
+        student.extValues = ["key": "keyValue"]
         
         print("======================")
-        print("\(student.extValue)")
+        print("\(student.extValues)")
 
-        
+        let value = student.extValue<String>(for: "key")
+        print("value ===== \(value)")
     }
     
     func testPerformanceExample() {

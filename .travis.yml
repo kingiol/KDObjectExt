@@ -1,0 +1,4 @@
+osx_image: xcode8.3
+language: swift
+xcode_project: KDObjectExt.xcodeproj # path to your xcodeproj folder
+xcode_scheme: KDObjectExtTests

@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/kingiol/KDObjectExt"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "kingiol" => "kingxiaokang@gmail.com" }
-  s.social_media_url   = "http://twitter.com/kingiol"
+  s.social_media_url   = "https://twitter.com/kingiol"
 
   s.ios.deployment_target = "9.0"
   s.osx.deployment_target = "10.9"
