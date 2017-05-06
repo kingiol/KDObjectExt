@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		62A9322E1EBD7D61004119F8 /* KDObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9322D1EBD7D61004119F8 /* KDObjectExt.swift */; };
+		62A932301EBD8652004119F8 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 62A9322F1EBD8652004119F8 /* CHANGELOG.md */; };
 		62ED46811EBC843100C94E13 /* KDObjectExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62ED46771EBC843100C94E13 /* KDObjectExt.framework */; };
 		62ED46861EBC843100C94E13 /* KDObjectExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ED46851EBC843100C94E13 /* KDObjectExtTests.swift */; };
 		62ED46881EBC843100C94E13 /* KDObjectExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 62ED467A1EBC843100C94E13 /* KDObjectExt.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		62A9322D1EBD7D61004119F8 /* KDObjectExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDObjectExt.swift; sourceTree = "<group>"; };
+		62A9322F1EBD8652004119F8 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		62ED46771EBC843100C94E13 /* KDObjectExt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KDObjectExt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62ED467A1EBC843100C94E13 /* KDObjectExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDObjectExt.h; sourceTree = "<group>"; };
 		62ED467B1EBC843100C94E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		62ED466D1EBC843100C94E13 = {
 			isa = PBXGroup;
 			children = (
+				62A9322F1EBD8652004119F8 /* CHANGELOG.md */,
 				62ED46791EBC843100C94E13 /* KDObjectExt */,
 				62ED46841EBC843100C94E13 /* KDObjectExtTests */,
 				62ED46781EBC843100C94E13 /* Products */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62A9322E1EBD7D61004119F8 /* KDObjectExt.swift in Sources */,
+				62A932301EBD8652004119F8 /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
